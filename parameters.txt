@@ -2,15 +2,15 @@
 B_z = 1.0                   # 剩磁 (Tesla)
 h = 7.3 * 1e-3              # 高度 (m)
 r_in = 1.8 * 1e-3           # 内径 (m)
-r_out = (7.7 / 2) * 1e-3    # 外径 (m) - 直接写除法，极其直观！
+r_out = (7.7 / 2) * 1e-3    # 外径 (m) 
 
 start_m = 10 * 1e-3         # 扫描起始距离 (m)
 end_m = 50 * 1e-3           # 扫描终止距离 (m)
 step_m = 0.1 * 1e-3           # 扫描步长 (m)
 
+filename = "magnetic_force_results.csv"
+
+#default parameters
 #delta_m = 0.0001           #求导步长
 #grid_size = 0.0001         #积分步长
 #修改无效
-
-
-filename = "magnetic_force_results.csv"
