@@ -1,11 +1,11 @@
-import interaction_force
+import interaction_force as interaction_force
 
 
 from config import load_parameters
 from interaction_force import generate_force_csv
 
 
-config = load_parameters("parameters.txt")
+config = load_parameters("get_force_formula/parameters.txt")
 
 
 generate_force_csv(
