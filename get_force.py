@@ -40,3 +40,19 @@ def get_force_at_distance(ent_tar, ent_sou):
     F = F_mag * delta_pos / distance
     
     return F
+
+
+def get_resistance(entity, k_linear=0.000055616, k_quadratic=0.0):
+   
+    v = entity.velocity
+    speed = np.linalg.norm(v)
+
+    if speed < 1e-12:
+        return np.zeros(3)
+
+    f_linear = -k_linear * v
+
+   
+    f_quadratic = -k_quadratic * speed * v
+
+    return f_linear + f_quadratic

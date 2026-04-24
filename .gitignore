@@ -1,4 +1,7 @@
+# 忽略所有生成的 CSV 数据文件
+*.csv
+# 忽略仿真生成的其他文本结果
+*.txt
+# 忽略 Python 缓存和 VS Code 配置
 __pycache__/
 .vscode/
-*.csv
-*.txt

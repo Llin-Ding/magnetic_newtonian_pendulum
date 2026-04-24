@@ -25,9 +25,7 @@ class Entity:
         self.force = np.zeros(3)
 
     def update(self, dt):
-        """
-        利用半步缓存技巧，在单次调用中实现与 Velocity Verlet 等价的辛积分。
-        """
+        
         self.acceleration = self.force / self.mass
         
         # 1. 闭环：利用当前新位置受到的力，完成【上一个时间步】速度的后半步更新
